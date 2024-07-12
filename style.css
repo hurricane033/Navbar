@@ -1,40 +1,42 @@
 body {
     background-color: rgb(238, 235, 240);
     font-family: "Montserrat", sans-serif;
+    margin: 0;
 }
 
-.nav-header {
-    display: inline-flex;
-    z-index: 900;
-    position: absolute;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: fit-content;
-    /*background-color: rgb(255, 255, 255);*/
-    padding: 10px;
-    top: 0;
-    left: 0;
+nav{
+    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 2px rgb(172, 171, 171);
+    height: 120px;
+    box-shadow: 0px 2px 2px rgb(92, 91, 91);
+    width: 100%;
+    
+}
+.nav-center{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
 }
 
 h2 {
     font-size: 3rem;
-    margin-left: 100px;
+    margin-left: 20px;
+    padding: 0;
     color: rgb(71, 51, 85);
 }
 
 .menu {
-position: relative;
-    list-style-type: none;
-    width: fit-content;
-    padding: 0%;
+    height: auto;
+    display: flex;
+    margin: auto;
 }
 
 .menu-items {
-    display: inline;
+    display: inline-flex;
     margin: 20px;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: x-large;
 }
 
@@ -42,7 +44,8 @@ position: relative;
     background-color: rgb(238, 235, 240);
     width: fit-content;
     border-radius: 10px;
-    box-shadow: 0px 2px 2px rgb(72, 72, 72);
+    padding: 10px 10px;
+    box-shadow: 0px 4px 4px rgb(72, 72, 72);
 }
 
 a {
@@ -52,19 +55,18 @@ a {
 
 .menu-items:active {
     background-color: rgb(193, 192, 192);
+    transform: translateY(2px);
+    box-shadow: 0px 2px 2px rgb(72, 72, 72);
 }
 
 .social-icons {
     list-style-type: none;
-    margin: auto;
-    position: relative;
-    float: right;
+    margin-right: 20px;
 }
 
 .social-items {
     display: inline;
-    margin: 8px;
-    padding: 10px 15px;
+    padding: 10px;
     font-size: xx-large;
 }
 
@@ -74,20 +76,30 @@ a {
 
 
 @media screen and (max-width: 1220px) {
-    .nav-toggle {
+    .nav-center{
+        margin: 0 auto;
+        display: inline;
+        height: 120px;
+    }
+
+    .nav-header{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+
+    .nav-toggle {
+        display: inline;
         background: none;
         border: none;
-        margin-right: 100px;
         padding: 5px 10px;
-        border-radius: 0px;
         cursor: pointer;
-        float: right;
     }
+
     .nav-toggle:hover {
         background-color: rgb(193, 192, 192);
         border-radius: 3px;
-
     }
 
     .nav-toggle:active {
@@ -101,8 +113,8 @@ a {
 
     .menu {
         width: 100%;
-        margin-top: 152px;
-        float: left;
+        padding: 0px;
+        display: block;
     }
 
     .menu-items {
@@ -112,12 +124,17 @@ a {
         width: 100%;
         margin: 0;
         padding: 20px;
-        text-indent: 30px;
+        text-indent: 15px;
+        border-bottom: 1px groove rgba(131, 131, 131, 0.438);
     }
+
     .menu-items:hover {
         background-color: rgb(238, 235, 240);
         box-shadow: none;
-        border-radius: none;
+        border-radius: 0px;
+        margin: 0;
+        padding: 20px;
+        text-indent: 30px;
         width: 100%;
     }
 }
