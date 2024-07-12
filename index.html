@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <nav>
-        <div class="navcontainer">
-            <h2>My Page</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="nav-toggle">
-            <i class="material-symbols-outlined">menu</i>
-        </button>
-    </div>
-</nav>
+        <div class="nav-center">
+            
+            <ul class="menu">
+                <li class="menu-items"><a href="#home">Home</a></li>
+                <li class="menu-items"><a href="#about">About Me</a></li>
+                <li class="menu-items"><a href="#projects">Projects</a></li>
+                <li class="menu-items"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-header">
+                <h2>MyPage</h2>
+
+                <button class="nav-toggle">
+                    <i class="material-symbols-outlined" style="font-size: xxx-large;">menu</i>
+                </button>
+
+                <ul class="social-icons">
+                    <li class="social-items"> <a href=""> <i class="fab fa-linkedin"></i></a></li>
+                    <li class="social-items"> <a href="https://github.com/hurricane033"> <i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
     <script src="app.js"></script>
 </body>
+
 </html>

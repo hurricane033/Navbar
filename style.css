@@ -1,25 +1,123 @@
-body{
-    background-color:rgb(235, 240, 239);
+body {
+    background-color: rgb(238, 235, 240);
+    font-family: "Montserrat", sans-serif;
 }
 
-.navcontainer{
-    background-color:rgb(255, 255, 255) ;
+.nav-header {
+    display: inline-flex;
+    z-index: 900;
     position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    /*background-color: rgb(255, 255, 255);*/
     padding: 10px;
     top: 0;
     left: 0;
-    width: 100%;
-    text-align: center;
-    height: 120px;
     box-shadow: 2px 2px 2px rgb(172, 171, 171);
 }
 
-ul{
-    list-style-type: none;
+h2 {
+    font-size: 3rem;
+    margin-left: 100px;
+    color: rgb(71, 51, 85);
 }
 
-li{
+.menu {
+position: relative;
+    list-style-type: none;
+    width: fit-content;
+    padding: 0%;
+}
+
+.menu-items {
     display: inline;
-    padding: 30px;
-    font-size: larger;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: x-large;
+}
+
+.menu-items:hover {
+    background-color: rgb(238, 235, 240);
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgb(72, 72, 72);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(71, 51, 85);
+}
+
+.menu-items:active {
+    background-color: rgb(193, 192, 192);
+}
+
+.social-icons {
+    list-style-type: none;
+    margin: auto;
+    position: relative;
+    float: right;
+}
+
+.social-items {
+    display: inline;
+    margin: 8px;
+    padding: 10px 15px;
+    font-size: xx-large;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+@media screen and (max-width: 1220px) {
+    .nav-toggle {
+        display: flex;
+        background: none;
+        border: none;
+        margin-right: 100px;
+        padding: 5px 10px;
+        border-radius: 0px;
+        cursor: pointer;
+        float: right;
+    }
+    .nav-toggle:hover {
+        background-color: rgb(193, 192, 192);
+        border-radius: 3px;
+
+    }
+
+    .nav-toggle:active {
+        background-color: rgb(157, 155, 155);
+        transform: scale(1.1);
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: 152px;
+        float: left;
+    }
+
+    .menu-items {
+        display: flex;
+        font-size: x-large;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        text-indent: 30px;
+    }
+    .menu-items:hover {
+        background-color: rgb(238, 235, 240);
+        box-shadow: none;
+        border-radius: none;
+        width: 100%;
+    }
 }
