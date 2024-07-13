@@ -22,13 +22,12 @@ nav{
 
 h2 {
     font-size: 3rem;
-    margin-left: 20px;
-    padding: 0;
+    margin:20px;
     color: rgb(71, 51, 85);
 }
 
 .menu {
-    height: auto;
+    padding: 0;
     display: flex;
     margin: auto;
 }
@@ -61,7 +60,8 @@ a {
 
 .social-icons {
     list-style-type: none;
-    margin-right: 20px;
+    padding: 10px;
+    margin-right: 130px;
 }
 
 .social-items {
@@ -94,6 +94,7 @@ a {
         background: none;
         border: none;
         padding: 5px 10px;
+        margin-right: 10px;
         cursor: pointer;
     }
 
@@ -112,9 +113,16 @@ a {
     }
 
     .menu {
+        height: 0px;
+        overflow:hidden;
+    }
+
+    .show-menu{
         width: 100%;
+        overflow: visible;
         padding: 0px;
         display: block;
+        height: 200px;
     }
 
     .menu-items {
